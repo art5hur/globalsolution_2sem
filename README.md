@@ -59,10 +59,10 @@ docker run -d \
     --network host \
     -p 8080:8080  \
     -e PROFILE=dev \
-    -e DATABASE_URL=jdbc:mysql://localhost:3306/api?createDatabaseIfNotExist=true \
+    -e DATABASE_URL=jdbc:mysql://host.docker.internal:3306/api?createDatabaseIfNotExist=true \
     -e DATABASE_USER=root \
     -e DATABASE_PWD=root_pwd \
-    ecommerce
+    gs
 ```
 
 ## Docker Compose
